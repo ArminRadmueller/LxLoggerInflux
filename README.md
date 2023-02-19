@@ -35,5 +35,7 @@ services:
     image: arminradmueller/lxloggerinflux:latest
     ports:
       - 2022:2022/udp
+    volumes:
+      - ./config.json:/app.config.json:ro
     restart: always
 ```
